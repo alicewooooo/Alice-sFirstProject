@@ -1,0 +1,133 @@
+#-------START HERE---------------#
+from turtle import * 
+#-------DEFINE FUNCIOTN----------#
+def chiiii(x):
+for i in range(5):
+fd(x)
+rt(45)
+fd(x)
+lt(45)
+
+def yoooo():
+  fd(300)
+  circle(20,180)
+  fd(180)
+  begin_fill()
+  fillcolor("white")
+  circle(5)
+  end_fill()
+
+def jump(x,y):
+  penup()
+  goto(x,y)
+  pendown()
+
+def maaan():
+  for i in range(5,50,5):
+    fd(i)
+    rt(90)
+#-------MAIN TASK----------------#
+speed(0)
+
+canvas=Screen()
+canvas.bgcolor(0,64,128)
+#-------START DRAWING------------#
+#1
+pensize(20)
+color(252,210,207)
+
+circle(200,325)
+
+#2
+pensize(5)
+color("black")
+x=-250
+y=300
+jump(-250,300)
+
+lt(58)
+for i in range(5):
+  y=y-8
+  jump(x,y)
+  chiiii(20)
+
+x=50
+y=50
+jump(30,600)
+for i in range(5):
+  y=y-8
+jump(x,y)
+  chiiii(20)
+lt(22)
+
+x=100
+y=400
+jump(100,400)
+for i in range(5):
+  y=y-8
+  jump(x,y)
+  chiiii(15)
+
+rt(45)
+#3
+pensize(3)
+color("white")
+
+x=-350
+y=-200
+jump(-350,50)
+yoooo()
+
+x=50
+y=500
+jump(50,550)
+lt(90)
+yoooo()
+
+x=400
+y=-150
+jump(400,150)
+lt(90)
+yoooo()
+
+x=-300
+y=-100
+jump(x,y)
+
+#4
+for i in range(16):
+  for i in range(4):
+    maaan()
+    penup()
+    fd(40)
+    pendown()
+  fd(40)
+
+lt(90)
+for i in range(15):
+  for i in range(4):
+    maaan()
+    penup()
+    fd(40)
+    pendown()
+  fd(40)
+
+lt(90)
+for i in range(16):
+  for i in range(4):
+    maaan()
+penup()
+    fd(40)
+    pendown()
+  fd(40)
+
+lt(90)
+for i in range(15):
+  for i in range(4):
+    maaan()
+    penup()
+    fd(40)
+    pendown()
+  fd(40)
+#-------END DRAWING--------------#
+hideturtle()
